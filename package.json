@@ -19,8 +19,7 @@
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watchAll",
-    "generate": "stencil generate",
-    "publish": "npm run build && npm publish --access=public"
+    "generate": "stencil generate"
   },
   "dependencies": {
     "@stencil/core": "^2.7.0"
