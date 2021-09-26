@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0" />
+    <title>Stencil Component Starter</title>
+
+    <script type="module" src="/build/custom-number-input-element.esm.js"></script>
+    <script nomodule src="/build/custom-number-input-element.js"></script>
+
+    <script>
+      window.onload = function () {
+        let rating = document.getElementById("myRatingComponent");
+        rating.addEventListener("focus", function (event) {
+          alert(event.target.value);
+        })
+      };
+    </script>
+  </head>
+  <body>
+  <form action='/' method='GET'>
+    <custom-number-input-element id='myRatingComponent' class='form-control' name="myinput" value="0"></custom-number-input-element>
+
+    <button type='submit'>Submit</button>
+  </form>
+
+  </body>
+</html>
